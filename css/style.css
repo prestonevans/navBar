@@ -1,0 +1,59 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5em 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3em;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+header nav {
+  display: flex;
+  gap: 1.5em;
+}
+header .ham {
+  position: relative;
+  display: none;
+}
+header .lines {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+header .lines div {
+  height: 4px;
+  width: 50px;
+  background-color: white;
+}
+header .hidden {
+  display: none;
+  position: absolute;
+  bottom: -50%;
+  transform: translateY(100%);
+  padding: 1rem;
+}
+header .hidden a {
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  header nav {
+    display: none;
+  }
+  header .ham {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
